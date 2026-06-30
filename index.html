@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Raid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="Star Raid game">
+        <div class="hud">
+          <div>
+            <span class="hud-label">Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span class="hud-label">Stage</span>
+            <strong id="stage">1</strong>
+          </div>
+          <div>
+            <span class="hud-label">Lives</span>
+            <strong id="lives">3</strong>
+          </div>
+          <div>
+            <span class="hud-label">Best</span>
+            <strong id="bestScore">0</strong>
+          </div>
+          <div>
+            <span class="hud-label">Weapon</span>
+            <strong id="weapon">Blaster</strong>
+          </div>
+          <div>
+            <span class="hud-label">Shield</span>
+            <strong id="shield">1</strong>
+          </div>
+          <div>
+            <span class="hud-label">Combo</span>
+            <strong id="combo">-</strong>
+          </div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="game" width="480" height="640"></canvas>
+          <div id="overlay" class="overlay">
+            <h1>Star Raid</h1>
+            <p id="overlayText">Defend the lane.</p>
+            <button id="primaryAction" type="button">Start</button>
+          </div>
+        </div>
+
+        <div class="controls" aria-label="Game controls">
+          <button id="leftButton" class="control-button" type="button" aria-label="Move left">
+            <span aria-hidden="true">&#9664;</span>
+          </button>
+          <button id="fireButton" class="control-button fire" type="button" aria-label="Fire">
+            <span aria-hidden="true">&#9679;</span>
+          </button>
+          <button id="pauseButton" class="control-button pause" type="button" aria-label="Pause game">
+            <span aria-hidden="true">&#10074;&#10074;</span>
+          </button>
+          <button id="rightButton" class="control-button" type="button" aria-label="Move right">
+            <span aria-hidden="true">&#9654;</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
