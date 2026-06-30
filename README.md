@@ -4,14 +4,11 @@ Browser-based space shooter built with HTML, CSS, and vanilla JavaScript.
 
 ## Project Structure
 
-```text
-.
-├── index.html        # Main entry point
-├── style.css         # Game layout and visual styles
-├── game.js           # Core gameplay, rendering, and input logic
-├── game-state.js     # Additional state-related script in the workspace
-└── game-render.js    # Additional rendering-related script in the workspace
-```
+- `index.html` - Main entry point
+- `style.css` - Game layout and visual styles
+- `game.js` - Core gameplay, rendering, and input logic
+- `game-state.js` - Additional state-related script in the workspace
+- `game-render.js` - Additional rendering-related script in the workspace
 
 `index.html` loads `game.js` directly, so that is the script used when you open the game in a browser.
 
